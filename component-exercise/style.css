@@ -5,6 +5,11 @@ body {
     font-family: 'open sans';
 }
 
+* {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
 h3,
 h4 {
     font-family: 'titillium web';
@@ -34,27 +39,20 @@ h4 {
     margin-bottom: 2rem;
 }
 
-.course-name__title {
-    margin-block-start: 0;
-    margin-block-end: 0;
-}
-
-.course-name__owner {
-    margin-block-start: 0;
-    margin-block-end: 0;
-}
-
 .course-options {
     list-style-type: none;
-    margin-block-start: 0;
-    margin-block-end: 0;
     padding-inline-start: 0;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .course-options__option,
 .course-options__option--highlighted {
     height: 2rem;
-    background-color: antiquewhite;
+    background-color: rgba(20, 22, 25, 0.08);
+    text-align: center;
+    margin-bottom: 1px
 }
 
 .course-options__option--highlighted {
