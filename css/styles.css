@@ -23,10 +23,12 @@ section {
 }
 
 .form {
+    display: flex;
+    flex-direction: column;
     border: 2px solid #443385;
     border-radius: 4px;
     padding: 2rem;
-    box-shadow: -7px 7px #44338594;
+    box-shadow: -7px 7px #E1E1FC;
 }
 
 .form__label {
@@ -42,4 +44,37 @@ section {
     margin-bottom: 2rem;
     padding: 0 0.5rem 0.5rem 0;
     font-size: 1rem;
+    font-weight: bold;
+}
+
+
+/* 
+.form__input[type=number]::-webkit-inner-spin-button {
+    background-color: #5c29db;
+} */
+
+
+/* när våra input-fält får fokus */
+
+.form__input:focus {
+    border-color: #5c29db;
+}
+
+.form__button {
+    background-color: #443385;
+    padding: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px solid #443385;
+    box-shadow: -4px 4px #E1E1FC;
+    transition: all 1s;
+}
+
+
+/* vid hover på knapp */
+
+.form__button:hover {
+    background-color: rgb(187, 21, 93);
+    cursor: pointer;
 }
